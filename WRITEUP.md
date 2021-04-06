@@ -20,4 +20,9 @@ Therefore, for the purpose of the FlaskWebProject I am choosing App Service sinc
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
 
-If I will need a full control over the underlying operating system and software or more more computing resources beyond the App Service (limit of 14GB and 4 vCPU cores) then we'll have to switch to VM.
+I will have to change the decision using an App Service and use a VM instead because of any of the following reasons:
+- If I will need a full control over the underlying operating system and/or install software on the server. With App Service I have a limited access to the host server. 
+- If the app will expand and will require more computing resources beyond the App Service limit of 14GB and 4 vCPU cores.
+- If the app would be in any other non supported language, such as .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python.
+- If I need to quickly spin up different operating system and application configurations as a VM is a great option for test and development.
+- Because of High Performance Compute Needs.
